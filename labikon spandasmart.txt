@@ -1,0 +1,534 @@
+<!-- Hero Section -->
+<section id="beranda" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+        <div class="fade-in">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Selamat Datang di Layanan BK</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Kami siap membantu siswa dalam mengembangkan potensi diri, mengatasi masalah pribadi, 
+                dan merencanakan masa depan yang cerah.
+            </p>
+            <button onclick="scrollToSection('layanan')" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                Jelajahi Layanan
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Layanan Section -->
+<section id="layanan" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Layanan Kami</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-md card-hover">
+                <div class="text-4xl mb-4">🎯</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-800">Bimbingan Pribadi</h3>
+                <p class="text-gray-600 mb-4">Membantu siswa mengenali diri, mengembangkan kepercayaan diri, dan mengatasi masalah pribadi.</p>
+                <button onclick="openModal('pribadi')" class="text-blue-600 hover:text-blue-800 font-medium">Pelajari Lebih Lanjut →</button>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-md card-hover">
+                <div class="text-4xl mb-4">📚</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-800">Bimbingan Belajar</h3>
+                <p class="text-gray-600 mb-4">Memberikan strategi belajar efektif, mengatasi kesulitan akademik, dan meningkatkan prestasi.</p>
+                <button onclick="openModal('belajar')" class="text-blue-600 hover:text-blue-800 font-medium">Pelajari Lebih Lanjut →</button>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-md card-hover">
+                <div class="text-4xl mb-4">🚀</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-800">Bimbingan Karir</h3>
+                <p class="text-gray-600 mb-4">Membantu siswa merencanakan masa depan, memilih jurusan, dan mengeksplorasi karir.</p>
+                <button onclick="openModal('karir')" class="text-blue-600 hover:text-blue-800 font-medium">Pelajari Lebih Lanjut →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Materi Section -->
+<section id="materi" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Materi Bimbingan Konseling</h2>
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-blue-50 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-blue-800 mb-6">Tentang Bimbingan Konseling di SMP</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">Pengertian Bimbingan Konseling</h4>
+                        <p class="text-gray-700 mb-4">
+                            Bimbingan dan Konseling (BK) adalah proses bantuan yang diberikan kepada siswa untuk membantu mereka 
+                            memahami diri sendiri, mengatasi masalah, dan mengembangkan potensi secara optimal.
+                        </p>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">Tujuan BK di SMP</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Membantu siswa memahami diri dan lingkungannya</li>
+                            <li>Mengembangkan potensi akademik dan non-akademik</li>
+                            <li>Membantu mengatasi masalah pribadi dan sosial</li>
+                            <li>Mempersiapkan siswa untuk jenjang pendidikan selanjutnya</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-gray-800">Bidang Layanan BK</h4>
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <h5 class="font-semibold text-blue-700">1. Bimbingan Pribadi</h5>
+                                <p class="text-sm text-gray-600">Pengembangan kepribadian, karakter, dan keterampilan hidup</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <h5 class="font-semibold text-green-700">2. Bimbingan Sosial</h5>
+                                <p class="text-sm text-gray-600">Kemampuan berinteraksi dan beradaptasi dengan lingkungan</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <h5 class="font-semibold text-purple-700">3. Bimbingan Belajar</h5>
+                                <p class="text-sm text-gray-600">Strategi belajar efektif dan peningkatan prestasi akademik</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <h5 class="font-semibold text-orange-700">4. Bimbingan Karir</h5>
+                                <p class="text-sm text-gray-600">Perencanaan masa depan dan pemilihan jenjang pendidikan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-3xl mb-4">📖</div>
+                    <h4 class="text-lg font-semibold mb-3">Panduan Siswa Baru</h4>
+                    <p class="text-gray-600 mb-4">Panduan lengkap untuk siswa baru dalam beradaptasi di lingkungan SMP</p>
+                    <button onclick="downloadMaterial('panduan-siswa-baru')" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm">
+                        Download PDF
+                    </button>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-3xl mb-4">🧠</div>
+                    <h4 class="text-lg font-semibold mb-3">Tips Belajar Efektif</h4>
+                    <p class="text-gray-600 mb-4">Strategi dan teknik belajar yang terbukti efektif untuk siswa SMP</p>
+                    <button onclick="downloadMaterial('tips-belajar')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
+                        Download PDF
+                    </button>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="text-3xl mb-4">🎯</div>
+                    <h4 class="text-lg font-semibold mb-3">Eksplorasi Karir</h4>
+                    <p class="text-gray-600 mb-4">Panduan eksplorasi minat, bakat, dan pilihan karir untuk masa depan</p>
+                    <button onclick="downloadMaterial('eksplorasi-karir')" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-sm">
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Konsultasi Online -->
+<section class="py-16 bg-blue-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Konsultasi Online</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+            <div class="bg-white rounded-lg p-6 shadow-md text-center card-hover">
+                <div class="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-2xl">📱</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">WhatsApp Chat</h3>
+                <p class="text-gray-600 mb-4">Chat langsung dengan guru BK melalui WhatsApp untuk konsultasi cepat</p>
+                <button onclick="openWhatsAppModal()" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                    Chat WhatsApp
+                </button>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-md text-center card-hover">
+                <div class="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-2xl">📹</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Video Call</h3>
+                <p class="text-gray-600 mb-4">Konsultasi tatap muka virtual dengan guru BK melalui video call</p>
+                <button onclick="openVideoCallModal()" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                    Mulai Video Call
+                </button>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-md text-center card-hover">
+                <div class="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-2xl">💬</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Chat Online</h3>
+                <p class="text-gray-600 mb-4">Chat langsung dengan guru BK melalui platform chat online sekolah</p>
+                <button onclick="alert('Fitur chat online akan segera tersedia!')" class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                    Mulai Chat
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Konsultasi Form -->
+<section id="konsultasi" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Formulir Konsultasi</h2>
+            <div class="bg-gray-50 rounded-lg p-8">
+                <form id="konsultasiForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                            <input type="text" id="nama" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Kelas</label>
+                            <select id="kelas" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                <option value="">Pilih Kelas</option>
+                                <option value="7A">7A</option>
+                                <option value="7B">7B</option>
+                                <option value="7C">7C</option>
+                                <option value="8A">8A</option>
+                                <option value="8B">8B</option>
+                                <option value="8C">8C</option>
+                                <option value="9A">9A</option>
+                                <option value="9B">9B</option>
+                                <option value="9C">9C</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Jenis Konsultasi</label>
+                        <select id="jenisKonsultasi" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            <option value="">Pilih Jenis Konsultasi</option>
+                            <option value="pribadi">Bimbingan Pribadi</option>
+                            <option value="belajar">Bimbingan Belajar</option>
+                            <option value="karir">Bimbingan Karir</option>
+                            <option value="sosial">Masalah Sosial</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Deskripsi Masalah</label>
+                        <textarea id="deskripsi" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Ceritakan masalah atau hal yang ingin dikonsultasikan..." required></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Waktu Konsultasi yang Diinginkan</label>
+                        <input type="datetime-local" id="waktu" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors">
+                        Kirim Permohonan Konsultasi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Guru BK Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Tim Guru BK</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                <div class="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-3xl">👩‍🏫</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Ibu Ai Kusmiati, S.Pd,.M.M.</h3>
+                <p class="text-gray-600 mb-4">Guru BK Senior - Spesialis Bimbingan Pribadi dan Sosial</p>
+                <p class="text-sm text-gray-500">Koordinator Bimbingan Konseling</p>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                <div class="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-3xl">👩‍🏫</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Ibu Nathalia Retno Lestari, S.Pd</h3>
+                <p class="text-gray-600 mb-4">Guru BK - Spesialis Bimbingan Belajar dan Karir</p>
+                <p class="text-sm text-gray-500">Konselor Pendidikan</p>
+            </div>
+            
+            <div class="bg-white rounded-lg p-6 shadow-md text-center">
+                <div class="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-3xl">👩‍🏫</span>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Ibu Asti Rahmawati, S.Pd</h3>
+                <p class="text-gray-600 mb-4">Guru BK - Spesialis Bimbingan Sosial dan Emosional</p>
+                <p class="text-sm text-gray-500">Konselor Pendidikan</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kontak Section -->
+<section id="kontak" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Hubungi Kami</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-2xl">📍</span>
+                </div>
+                <h3 class="font-semibold mb-2">Alamat</h3>
+                <p class="text-gray-600">Jl. Ir. H. Juanda No. 14 Cikole<br>Kota Sukabumi, Jawa Barat</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-2xl">📞</span>
+                </div>
+                <h3 class="font-semibold mb-2">Telepon</h3>
+                <p class="text-gray-600">(0266) 221686<br>Senin - Jumat: 07:00 - 15:00</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span class="text-2xl">✉️</span>
+                </div>
+                <h3 class="font-semibold mb-2">Email</h3>
+                <p class="text-gray-600">spandasmart@gmail.com<br>Respon dalam 24 jam</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="gradient-bg text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2024 SMP Negeri 2 Kota Sukabumi. Semua hak dilindungi.</p>
+        <p class="text-blue-100 mt-2">Melayani dengan sepenuh hati untuk masa depan siswa yang lebih baik</p>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-8 max-w-md mx-4">
+        <div class="flex justify-between items-center mb-4">
+            <h3 id="modalTitle" class="text-xl font-semibold"></h3>
+            <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                <span class="text-2xl">&times;</span>
+            </button>
+        </div>
+        <div id="modalContent" class="text-gray-600"></div>
+        <button onclick="closeModal()" class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
+            Tutup
+        </button>
+    </div>
+</div>
+
+<!-- WhatsApp Modal -->
+<div id="whatsappModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-8 max-w-md mx-4">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-semibold">Chat WhatsApp dengan Guru BK</h3>
+            <button onclick="closeWhatsAppModal()" class="text-gray-500 hover:text-gray-700">
+                <span class="text-2xl">&times;</span>
+            </button>
+        </div>
+        <div class="space-y-4">
+            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h4 class="font-semibold text-green-800 mb-2">📱 Ibu Ai Kusmiati, S.Pd,.M.M.</h4>
+                <p class="text-sm text-green-700 mb-3">Koordinator BK - Bimbingan Pribadi & Sosial</p>
+                <button onclick="openWhatsApp('62085215383869', 'Ibu Ai Kusmiati')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
+                    Chat Sekarang
+                </button>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h4 class="font-semibold text-green-800 mb-2">📱 Ibu Nathalia Retno Lestari, S.Pd</h4>
+                <p class="text-sm text-green-700 mb-3">Konselor - Bimbingan Belajar & Karir</p>
+                <button onclick="openWhatsApp('62081563324566', 'Ibu Nathalia')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
+                    Chat Sekarang
+                </button>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                <h4 class="font-semibold text-green-800 mb-2">📱 Ibu Asti Rahmawati, S.Pd</h4>
+                <p class="text-sm text-green-700 mb-3">Konselor - Bimbingan Sosial & Emosional</p>
+                <button onclick="openWhatsApp('62081578036904', 'Ibu Asti')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
+                    Chat Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Call Modal -->
+<div id="videoCallModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-8 max-w-md mx-4">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-semibold">Video Call dengan Guru BK</h3>
+            <button onclick="closeVideoCallModal()" class="text-gray-500 hover:text-gray-700">
+                <span class="text-2xl">&times;</span>
+            </button>
+        </div>
+        <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span class="text-3xl">📹</span>
+            </div>
+            <p class="text-gray-600 mb-4">Pilih guru BK untuk memulai video call konsultasi</p>
+        </div>
+        <div class="space-y-3">
+            <button onclick="startVideoCall('62085215383869', 'Ibu Ai Kusmiati')" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg text-left">
+                📹 Video Call dengan Ibu Ai Kusmiati
+            </button>
+            <button onclick="startVideoCall('62081563324566', 'Ibu Nathalia Retno')" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg text-left">
+                📹 Video Call dengan Ibu Nathalia Retno
+            </button>
+            <button onclick="startVideoCall('62081578036904', 'Ibu Asti Rahmawati')" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-lg text-left">
+                📹 Video Call dengan Ibu Asti Rahmawati
+            </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-4 text-center">*Video call tersedia pada jam kerja: Senin-Jumat 08:00-15:00</p>
+    </div>
+</div>
+
+<!-- Success Message -->
+<div id="successMessage" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hidden">
+    <div class="flex items-center">
+        <span class="mr-2">✅</span>
+        <span>Berhasil!</span>
+    </div>
+</div>
+
+<script>
+    // Smooth scrolling
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+    // Modal functionality
+    function openModal(type) {
+        const modal = document.getElementById('modal');
+        const title = document.getElementById('modalTitle');
+        const content = document.getElementById('modalContent');
+        
+        const modalData = {
+            pribadi: {
+                title: 'Bimbingan Pribadi',
+                content: `
+                    <p class="mb-4">Layanan bimbingan pribadi membantu siswa dalam:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Mengenali potensi dan bakat diri</li>
+                        <li>Membangun kepercayaan diri</li>
+                        <li>Mengatasi masalah emosional</li>
+                        <li>Mengembangkan keterampilan sosial</li>
+                        <li>Mengelola stres dan kecemasan</li>
+                    </ul>
+                    <p class="mt-4">Konsultasi dilakukan secara individual dan rahasia.</p>
+                `
+            },
+            belajar: {
+                title: 'Bimbingan Belajar',
+                content: `
+                    <p class="mb-4">Layanan bimbingan belajar meliputi:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Teknik belajar yang efektif</li>
+                        <li>Manajemen waktu belajar</li>
+                        <li>Mengatasi kesulitan mata pelajaran</li>
+                        <li>Persiapan ujian dan evaluasi</li>
+                        <li>Motivasi belajar</li>
+                    </ul>
+                    <p class="mt-4">Tersedia sesi individual maupun kelompok kecil.</p>
+                `
+            },
+            karir: {
+                title: 'Bimbingan Karir',
+                content: `
+                    <p class="mb-4">Layanan bimbingan karir membantu siswa:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Eksplorasi minat dan bakat</li>
+                        <li>Informasi jenjang pendidikan lanjutan</li>
+                        <li>Pilihan jurusan SMA/SMK</li>
+                        <li>Perencanaan masa depan</li>
+                        <li>Keterampilan wawancara dan presentasi</li>
+                    </ul>
+                    <p class="mt-4">Termasuk tes minat bakat dan konsultasi individual.</p>
+                `
+            }
+        };
+        
+        title.textContent = modalData[type].title;
+        content.innerHTML = modalData[type].content;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    // Material download
+    function downloadMaterial(type) {
+        const materials = {
+            'panduan-siswa-baru': 'Panduan_Siswa_Baru_SMP.pdf',
+            'tips-belajar': 'Tips_Belajar_Efektif.pdf',
+            'eksplorasi-karir': 'Panduan_Eksplorasi_Karir.pdf'
+        };
+        
+        alert(`Mengunduh ${materials[type]}...\n\nFile akan tersimpan di folder Downloads Anda.`);
+        showSuccessMessage('Materi berhasil diunduh!');
+    }
+
+    // WhatsApp Modal Functions
+    function openWhatsAppModal() {
+        const modal = document.getElementById('whatsappModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeWhatsAppModal() {
+        const modal = document.getElementById('whatsappModal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    function openWhatsApp(phoneNumber, teacherName) {
+        const message = `Halo ${teacherName}, saya ingin berkonsultasi dengan Bapak/Ibu mengenai masalah BK. Terima kasih.`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+        closeWhatsAppModal();
+    }
+
+    // Video Call Modal Functions
+    function openVideoCallModal() {
+        const modal = document.getElementById('videoCallModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+    }
+
+    function closeVideoCallModal() {
+        const modal = document.getElementById('videoCallModal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    }
+
+    function startVideoCall(phoneNumber, teacherName) {
+        const message = `Halo ${teacherName}, saya ingin melakukan video call konsultasi BK. Apakah Bapak/Ibu sedang tersedia? Terima kasih.`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappUrl, '_blank');
+        closeVideoCallModal();
+        showSuccessMessage('Permintaan video call dikirim via WhatsApp!');
+    }
+
+    // Form submission
+    document.getElementById('konsultasiForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        showSuccessMessage('Permohonan konsultasi berhasil dikirim!');
+        this.reset();
+    });
+
+    // Success message function
+    function showSuccessMessage(message) {
+        const successMessage = document.getElementById('successMessage');
+        successMessage.innerHTML = `
+            <div class="flex items-center">
+                <span class="mr-2">✅</span>
+                <span>${message}</span>
+            </div>
+        `;
+        successMessage.classList.remove('hidden');
+        
+        setTimeout(() => {
+            successMessage.classList.add('hidden');
+        }, 3000);
+    }
+</script>
